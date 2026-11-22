@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="760" viewBox="0 0 1100 760">
+<rect width="1100" height="760" fill="#fff"/><g font-family="Arial,sans-serif" fill="#172b3a">
+<text x="45" y="48" font-size="28" font-weight="bold">Arduino animal feeder — proposed wiring</text>
+<text x="45" y="78" font-size="17">Reconstructed prototype • Arduino Uno • servo gate • normally open button</text>
+<rect x="70" y="155" width="290" height="375" rx="18" fill="#eaf4f5" stroke="#167a85" stroke-width="3"/>
+<text x="95" y="195" font-size="25" font-weight="bold">Arduino Uno R3</text>
+<text x="95" y="240" font-size="18">Powered by USB</text>
+<text x="283" y="295" font-size="19">D9</text><text x="283" y="375" font-size="19">D2</text><text x="275" y="475" font-size="19">GND</text>
+<rect x="765" y="155" width="260" height="200" rx="12" fill="#f0f4fb" stroke="#425f8b" stroke-width="2"/>
+<text x="790" y="195" font-size="24" font-weight="bold">Positional servo</text>
+<text x="790" y="225" font-size="17">e.g. SG90, unloaded gate</text>
+<text x="790" y="260" font-size="18">+5 V</text><text x="790" y="295" font-size="18">Signal</text><text x="790" y="330" font-size="18">GND</text>
+<rect x="765" y="470" width="260" height="130" rx="12" fill="#fff4e6" stroke="#ab681a" stroke-width="2"/>
+<text x="790" y="505" font-size="22" font-weight="bold">Regulated 5 V supply</text>
+<text x="790" y="543" font-size="18">Positive (+)</text><text x="790" y="578" font-size="18">Negative (−)</text>
+<text x="420" y="420" font-size="18">Normally open button</text>
+<text x="420" y="446" font-size="15">D2 uses INPUT_PULLUP</text>
+<g fill="none" stroke-width="4" stroke-linejoin="round">
+<path d="M360 289 H765" stroke="#bb7900"/>
+<path d="M765 254 H700 V537 H765" stroke="#cc3939"/>
+<path d="M765 324 H650 V572 H765 M650 469 H360" stroke="#273640"/>
+<path d="M360 369 H465" stroke="#2772b5"/>
+<path d="M535 369 H600 V469 H650" stroke="#273640"/>
+<path d="M470 369 L524 343" stroke="#273640"/>
+</g>
+<g fill="#fff" stroke="#273640" stroke-width="3"><circle cx="470" cy="369" r="5"/><circle cx="530" cy="369" r="5"/></g>
+<circle cx="650" cy="469" r="6" fill="#273640"/>
+<text x="420" y="278" font-size="16" fill="#9c6300">Servo control signal</text>
+<text x="420" y="505" font-size="16">Shared ground</text>
+<text x="45" y="650" font-size="18" font-weight="bold">Power: USB → Uno; separate regulated 5 V → servo.</text>
+<text x="45" y="681" font-size="17">Connect supply negative to Uno GND. Do not join external positive to the Uno 5 V pin.</text>
+<text x="45" y="712" font-size="16">Match supply capacity to servo stall current. Verify servo lead functions; colours vary by manufacturer.</text>
+</g></svg>
